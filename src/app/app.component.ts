@@ -8,7 +8,7 @@ import { MyButtonComponent } from "../../projects/my-library/src/lib/my-button/m
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'my-workspace';
+  title = 'Hello, my-workspace';
 
   onClick() {
     console.log('Button clicked!');

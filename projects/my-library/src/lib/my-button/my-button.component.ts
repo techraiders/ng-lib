@@ -9,8 +9,13 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class MyButtonComponent {
   @Input() label: string = 'Click Me';
   @Output() click: EventEmitter<void> = new EventEmitter();
+  @Output() doubleClick: EventEmitter<void> = new EventEmitter();
 
   onClick() {
     this.click.emit();
+  }
+
+  onDoubleClick() {
+    this.doubleClick.emit();
   }
 }
